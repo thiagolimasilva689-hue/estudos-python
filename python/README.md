@@ -5,7 +5,7 @@ Este diretório contém meus exercícios iniciais em Python.
 ## 📚 Conteúdos estudados
 
 - Listas
-- Dicionários
+- dicionarios
 - Funções
 - Loops (for e while)
 
