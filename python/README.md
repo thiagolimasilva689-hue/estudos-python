@@ -15,4 +15,4 @@ Desenvolver lógica de programação e evoluir para a área de dados.
 
 ## 🚀 Progresso
 
-Estou praticando diariamente e adicionando novos exercícios conforme avanço.
+eu bem conseguir aprender no python ,listas , dicionarios, funções, vou postar agora listas 
