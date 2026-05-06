@@ -1,9 +1,9 @@
-Repositório com meus estudos de Python e SQL.
+Meus estudos sobre python! 🐍 
+Conteudos: 
+Listas; 
+Dicionarios, 
+Basicos(condicionais,loops,etc..), 
+Funções  
+Minha evolução: 
 
-demostrar o que eu sei de python:
-- listas
-- dicionários
-- funções
-- lógica de programação
 
-Objetivo: conseguir estágio na área de tecnologia
