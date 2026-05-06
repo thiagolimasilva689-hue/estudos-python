@@ -3,11 +3,11 @@ Conteudos:
 
 Listas; 
 
-Dicionarios, 
+Dicionarios;
 
-Basicos(condicionais,loops,etc..), 
+Basicos(condicionais,loops,etc..);
 
-Funções
+Funções;
 
 Minha evolução: 
 
