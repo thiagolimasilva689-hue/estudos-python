@@ -1,5 +1,6 @@
 Meus estudos sobre python! 🐍 
 Conteudos: 
+
 Listas; 
 
 Dicionarios, 
