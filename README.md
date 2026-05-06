@@ -1,9 +1,13 @@
 Meus estudos sobre python! 🐍 
 Conteudos: 
 Listas; 
+
 Dicionarios, 
+
 Basicos(condicionais,loops,etc..), 
-Funções  
+
+Funções
+
 Minha evolução: 
 
 
