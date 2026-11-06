@@ -1,135 +1,103 @@
 
 """
+Exercício 1 — Função de saudação
+Crie uma função chamada saudacao que recebe um nome e imprime:
 
-Questão 1 — Soma de pares
-Crie uma função chamada soma_pares que recebe uma lista de números inteiros e retorna a soma de todos os números pares.
+text
+"Olá, [nome]! Seja bem-vindo(a)!"
+Exemplo:
+
+python
+saudacao("Thiago")
+"""
+def saudação(nome):
+    return f"Olá,{nome}! Seja bem-vindo(a)!"
+#nome = input("INFORME O SEU NOME: ")
+
+"""
+Exercício 2 — Função com retorno
+Crie uma função chamada calcular_media que recebe 3 notas e retorna a média.
 
 Exemplo:
 
 python
-soma_pares([1, 2, 3, 4, 5, 6])
-Resultado esperado:
+media = calcular_media(7, 8, 9)
+print(media)
+# Saída: 8.0
+"""
+def calcular_media(a,b,c):
+    media = (a + b + c) / 3
+    return media
+#print(calcular_media(7,8,9))
 
 
-def soma_pares(lista):
-    somar = 0
+"""
+Exercício 3 — Função com condicional
+Crie uma função chamada classificar_idade que recebe uma idade e retorna:
+
+"Criança" se idade < 12
+
+"Adolescente" se 12 <= idade < 18
+
+"Adulto" se idade >= 18
+"""
+def classificar_idade(idade):
+    if idade <=12:
+        return "Criança"
+    elif idade > 12 and idade <18:
+        return "Adolescente"
+    elif idade >= 18 and idade <= 64:
+        return "Adulto"
+    else:
+        return "Idoso"
+'''
+
+Exercício 4 — Função com lista
+Crie uma função chamada maior_numero que recebe uma lista de números e retorna o maior deles.
+
+Exemplo:
+
+python
+lista = [5, 12, 8, 20, 3]
+print(maior_numero(lista))
+# Saída: 20
+def maior_numero(lista):
+    maior = lista[0]
     for i in lista:
-        if i % 2 == 0:
-            somar += i
-    return somar
+        if i > maior:
+            maior =  i
+    return maior
+num = int(input("INFORMER UM NÚMERO: "))
 lista = []
 while True:
-          num = int(input("INFORME O NÚMERO: "))
-          if num == -1:
-                break
-          lista.append(num)
-
-resultado = soma_pares(lista)
-print(f"O RESULTADO FINAL FOI : {resultado}")
-"""
-
-
-
+    num = int(input("INFORME UM NÚMERO: "))
+    if num == -0:
+               break
+    lista.append(num)
+print(maior_numero(lista))
+'''
 
 
 """
-
-Questão 2 — Contar vogais
-Crie uma função chamada contar_vogais que recebe uma string e retorna quantas vogais (a, e, i, o, u) existem nela.
+Exercício 5 — Função com dicionário
+Crie uma função chamada total_precos que recebe um dicionário de produtos (nome: preço) e retorna a soma de todos os preços.
 
 Exemplo:
 
 python
-contar_vogais("Thiago")
-Resultado esperado:
-
-def Contar_vogais(frase):
-    contar = 0
-    for letra in frase:
-            if letra.lower() in "aeiou":
-                  contar += 1
-    return contar
-palavra = input("FALAR QUALQUER COISA AÍ :")
-resulta = Contar_vogais(palavra)
-print(f"QUANTAS VOGAIS TINHA : {resulta}")
-
+produtos = {
+    "Arroz": 25.90,
+    "Feijão": 10.50,
+    "Carne": 45.00
+}
+print(total_precos(produtos))
+# Saída: 81.40
 """
-
-
-"""
-Questão 3 — Maior elemento
-Crie uma função chamada maior_elemento que recebe uma lista de números e retorna o maior valor.
-Exemplo:
-python
-maior_elemento([3, 7, 1, 12, 9])
-
-def maior_elemento(lista):
-        maior = max(lista)
-        return maior        
-lista = []
-while True:
-            num = int(input("INFORME O NÚMERO: "))
-            if num == -1:
-                      break 
-            lista.append(num)             
-resultado = maior_elemento(lista)
-print(f"O MAIOR ELEMENTO DE TUDOS É {resultado}")
-Resultado esperado:
-"""
-
-"""
-Questão 4 — Filtrar maiores que 10
-Crie uma função chamada filtrar_maiores_10 que recebe uma lista de números e retorna uma nova lista apenas com os números maiores que 10.
-
-Exemplo:
-
-python
-filtrar_maiores_10([5, 11, 2, 20, 8, 15])
-Resultado esperado:
-
-def filtrar_maiores_10(lista):
-    nova_lista = []
-    for i in lista:
-        if i >=10:
-            nova_lista.append(i)
-    return nova_lista
-lista = []
-while True:
-            num = int(input("INFORME O NÚMERO: "))
-            if num == -1:
-                  break      
-            lista.append(num)    
-print(filtrar_maiores_10(lista)) 
-"""
-
-
-"""
-Questão 5 — Contar letras de palavras
-Crie uma função chamada tamanho_palavras que recebe uma lista de palavras e retorna uma nova lista com a quantidade de letras de cada palavra.
-Exemplo:
-python
-tamanho_palavras(["dados", "python", "sql"])
-Resultado esperado:
-python
-[5, 6, 3]
-Se quiser, depois me manda suas respostas que eu corrijo e explico uma por uma. E se quiser questões de SQL também, é só pedir!
-"""
-def contar_lentrar(lista):
-    for i in lista:
-        contar = len(i)
-    return contar
-lista = []
-while True:
-    frase = input("FALAR QUALQUER COISA AÍ :")
-    if frase == 'kkk':
-        break
-    lista.append(frase)
-print(contar_lentrar(lista))
-
-
-
-
-
-
-
-
+def total_precos(produtos):
+    return sum(produtos.values())
+produtos = {
+    "Arroz": 25.90,
+    "Feijão": 10.50,
+    "Carne": 45.00
+}
+print(total_precos(produtos))
